@@ -1,0 +1,28 @@
+import java.util.Arrays;
+
+public class LabFive {
+
+	public static void main(String[] args) {
+		
+		int[] numbers = new int[10];
+		
+		//Generates 10 Random Numbers in the range of 1-5
+		for(int i = 0; i < numbers.length; i++){
+			numbers[i] = (int)(Math.random() * 5 + 1);
+			printReversed(numbers);
+		}
+		
+
+	}
+
+	private static void printReversed(int[] numbers) 
+	{//Traverse the array in reverse order , starting with the last element
+		for(int i = numbers.length - 1;i >= 0; i--)
+		{
+			System.out.println(numbers[i] + "");
+		}
+		
+		
+	}
+
+}
